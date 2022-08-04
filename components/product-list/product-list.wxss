@@ -1,0 +1,181 @@
+.flex-r {
+  display: flex;
+  flex-direction: row;
+}
+
+.product-list {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product-list_item {
+  box-shadow: 0 0px 0px 0 rgb(250, 248, 248);
+  transition: 0.3s;
+  border-radius: 20rpx;
+  background: #fff;
+  margin-bottom: 15rpx;
+  width: calc(50% - 10rpx);
+}
+
+.product-list>view:first-child {
+  margin-left: 0rpx;
+}
+
+.product-list>view:nth-child(2n+1) {
+  margin-left: 0rpx;
+}
+
+.product-list_item>image {
+  width: 100%;
+  border-radius: 15rpx 15rpx 0 0;
+}
+
+.product_name {
+  padding: 0 16rpx;
+  box-sizing: border-box;
+  height: 66rpx;
+  width: 100%;
+  margin-top: 16rpx;
+  line-height: 33rpx;
+}
+
+.product_price {
+  padding: 0 10rpx;
+  margin-top: 12rpx;
+}
+
+.fz-14 {
+  font-size: 28rpx;
+}
+
+.fz-10 {
+  font-size: 20rpx;
+}
+
+.fz-w {
+  font-weight: bold;
+}
+
+.fz-cl-main {
+  color: #e8370d;
+}
+
+.fz-cl-lg {
+  color: #aeaeae;
+}
+
+.pd-l-5 {
+  padding-left: 5px;
+}
+
+.multi-omit {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.single-omit {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product_top {
+  height: 36rpx;
+}
+
+.mid-align {
+  display: flex;
+  align-items: Center;
+}
+
+.fz--invalid {
+  text-decoration: line-through;
+}
+
+.fz-cl-gray {
+  color: #999;
+}
+
+.info-price {
+  color: red;
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-right: 15rpx
+}
+
+.fz--invalid {
+  text-decoration: line-through;
+  margin-top: 10rpx;
+  color: #b2b2b2;
+}
+
+.flex-t {
+  margin: 5rpx 0 0 10rpx
+}
+
+.footer {
+  padding: 10rpx 0;
+}
+
+.footer text:first-child {
+  padding-left: 0;
+}
+
+.txt {
+  padding: 0 10rpx;
+  font-weight: Regular;
+  color: var(--theme-color);
+  border-right: 2rpx solid var(--theme-color);
+}
+
+.footer text:last-child {
+  border: none;
+}
+
+.footer-right {
+  display: inline-block;
+  border: 1px solid #E5003D;
+  border-radius: 20rpx;
+  padding: 0 5rpx;
+}
+
+.footer-right .van-tag {
+  line-height: 34rpx;
+  color: #E5003D;
+}
+
+.footer-right .diamond {
+  text-align: center;
+  width: 40rpx;
+  height: 100%;
+  color: var(--theme-color);
+  font-size: 25rpx;
+}
+
+.me-tao {
+  padding: 5rpx 10rpx;
+  background: #6E28FF;
+  color: #fff;
+  font-size: 18rpx !important;
+  line-height: 24rpx;
+  text-align: center;
+  border-radius: 6rpx;
+}
+
+.m-left-20 {
+  margin-left: 20rpx;
+}
+
+.groupon-price {
+  color: #b2b2b2;
+  font-size: 26rpx;
+}

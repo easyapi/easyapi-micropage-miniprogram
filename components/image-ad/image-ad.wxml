@@ -1,0 +1,17 @@
+<view class="ad-container">
+  <view wx:if="{{component.items.length}}" style="padding:{{component.padding}};border-radius: {{component.borderRadius}};">
+    <view wx:if="{{component.template ==='一行一个' || component.template ==='绘制热区'}}">
+      <image style="border-radius:{{component.borderRadius}};height:{{loadeFlag?1:imageheight}}px;" wx:for="{{component.items}}" wx:key="img" mode="widthFix" src="{{item.img}}" class="ad-sp" data-adsvalue="{{item}}" bindtap="goto" bindload="bindload" />
+    </view>
+
+    <view wx:if="{{component.template === '轮播海报'}}" class="ad-po">
+      <swiper style="height:500rpx" class="ad-swiper" circular="true" indicator-color="#ddd" indicator-active-color="#333" indicator-dots autoplay>
+        <block wx:for="{{component.items}}" wx:key="img">
+          <swiper-item>
+            <image style="border-radius:{{component.borderRadius}};height:{{loadeFlag?1:imageheight}}px" src="{{item.img}}" class="ad-swiper-item" mode="widthFix" lazy-load="true" data-adsvalue="{{item}}" bindtap="goto" bindload="bindload"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+</view>

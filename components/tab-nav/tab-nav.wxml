@@ -1,0 +1,11 @@
+<view class="nav-container" style="padding: {{component.padding}};border-radius: {{component.borderRadius}};background-color: {{component.bgColor}};">
+  <view wx:for="{{component.items}}" wx:key="index" style="width:{{width}}">
+    <view class="nav-item">
+      <image wx:if="{{item.model !== 'KeFu'}}" src="{{item.img}}" bindtap="goto" mode="widthFix" data-adsvalue="{{item}}"></image>
+      <button open-type="contact" class="button_img" wx:if="{{item.model === 'KeFu'}}">
+        <image src="{{item.img}}" bindtap="jumpPage" mode="widthFix" data-adsvalue="{{item}}"></image>
+      </button>
+      <view class="text" style="color: {{component.fontColor}};">{{item.name}}</view>
+    </view>
+  </view>
+</view>

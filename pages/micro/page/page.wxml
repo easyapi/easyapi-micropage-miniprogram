@@ -1,0 +1,11 @@
+<view class="container-view">
+  <block wx:for="{{pageComponents}}" wx:key="index">
+    <tab-nav wx:if="{{item.type==='图文导航'}}" component="{{item}}"></tab-nav>
+    <image-ad wx:if="{{item.type==='图片广告'}}" component="{{item}}"></image-ad>
+    <title-text wx:if="{{item.type==='标题文本'}}" component="{{item}}"></title-text>
+    <cube wx:if="{{item.type==='魔方'}}" component="{{item}}"></cube>
+    <video wx:if="{{item.type==='视频'}}" component="{{item}}" style="width:100%;height:150px"></video>
+    <product-list wx:if="{{item.type==='商品'}}" component="{{item}}" url="{{true}}"></product-list>
+    <rich-text wx:if="{{item.type==='富文本'}}" component="{{item}}"></rich-text>
+  </block>
+</view>

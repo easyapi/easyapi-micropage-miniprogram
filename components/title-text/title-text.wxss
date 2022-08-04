@@ -1,0 +1,30 @@
+.title-container {
+  margin: 5px 0 5px 0;
+  width: 100%;
+}
+
+
+.title {
+  padding: 20rpx 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title-title {
+  padding-left: 20rpx;
+  border-left: 4px solid var(--theme-color);
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.title-more {
+  padding-right: 10rpx;
+  padding-top: 10rpx;
+}
+
+.title-more>text {
+  color: #A8A8A8;
+  font-size: 24rpx;
+  margin-right: 10rpx;
+}

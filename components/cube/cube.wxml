@@ -1,0 +1,6 @@
+<view class="cube-container">
+  <view class="cube" style="{{component.style}}">
+    <view wx:for="{{component.items}}" wx:key="index" class="cube-img" style="{{item.style}}" data-adsvalue='{{item}}' bindtap="goto">
+    </view>
+  </view>
+</view>

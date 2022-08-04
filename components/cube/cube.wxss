@@ -1,0 +1,14 @@
+.cube-container {
+  width: 100%;
+  margin: 5px 0 5px 0;
+}
+
+.cube {
+  display: grid;
+  grid-row-gap: 4px;
+  grid-column-gap: 4px;
+}
+
+.cube-img {
+  background-size: 100% 100%;
+}

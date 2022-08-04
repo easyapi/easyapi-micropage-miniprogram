@@ -1,0 +1,143 @@
+page {
+  --theme-color: #45aa06;
+}
+
+.van-button--primary {
+  background-color: #45aa06;
+}
+
+.van-dropdown-menu {
+  height: 0;
+}
+
+.buy_now {
+  background-color: #DE0000;
+}
+
+/**app.wxss**/
+
+.box-sizing {
+  box-sizing: border-box;
+}
+
+page {
+  width: 100%;
+  height: 100%;
+  font-size: 24rpx;
+}
+
+.container {
+  height: 100%;
+  overflow-y: auto;
+  background-color: #F5F5F5;
+}
+
+.no-content {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+}
+
+.scroll-box {
+  height: 100%;
+  width: 100%;
+}
+
+.flex-r {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.bfc--before::before {
+  content: ' ';
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.multi-omit {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.single-omit {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+image {
+  width: 100%;
+  height: auto;
+}
+
+.base-shop__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 95rpx;
+  background: var(--theme-color);
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.base-shop__button--plain {
+  background: #fff;
+  color: #18110b;
+  border: 1px solid #18110b;
+}
+
+.form-style {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+button.button-none {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: inline;
+  position: static;
+  border: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+  line-height: normal;
+  font-size: 12px;
+  text-align: left;
+}
+
+button.button-none::after {
+  content: '';
+  width: 0;
+  height: 0;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  display: none;
+  background-color: transparent;
+}
+
+/* 原生 */
+
+button {
+  font-weight: normal;
+}

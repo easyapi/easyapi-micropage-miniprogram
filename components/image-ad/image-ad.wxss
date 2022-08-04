@@ -1,0 +1,15 @@
+.ad-container {
+  width: 100%;
+}
+
+.ad-sp,
+.ad-po,
+.ad-swiper,
+.ad-swiper-item {
+  display: block;
+  width: 100%;
+}
+
+.ad-swiper-item {
+  width: 100%;
+}

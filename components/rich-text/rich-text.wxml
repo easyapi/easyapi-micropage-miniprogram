@@ -1,0 +1,5 @@
+<view>
+  <view style="background-color: {{component.bgColor}};border-radius: {{component.borderRadius}};padding: {{component.padding}};">
+    <rich-text nodes="{{component.html}}"></rich-text>
+  </view>
+</view>

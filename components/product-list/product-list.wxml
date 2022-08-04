@@ -1,0 +1,76 @@
+<view class="product flex-r" style="padding: {{component.padding}};">
+  <view class='product-list flex-r space-between'>
+    <view wx:if="{{url==true}}" class="product-list_item flex-c" style="width:{{component.size==2?'calc(50%-10rpx)':'230rpx'}}" wx:for="{{component.products}}" wx:key="index" data-adsvalue="{{item}}" bindtap="gotoProductDetail">
+      <image style="height:{{component.size==2?'340rpx':'230rpx'}}" lazy-load="true" src='{{item.img}}!big.jpg' mode='scaleToFill'></image>
+      <view class="product_name multi-omit" wx:if="{{item.grouponState == 1 && item.umpActivity.type == 'groupon'}}">
+        <van-tag type="warning">拼团</van-tag>
+        <text class="m-left-20">{{item.name}}</text>
+      </view>
+      <view class="product_name multi-omit" wx:elif="{{item.limitDiscountState == 1}}">
+        <van-tag type="warning">折扣</van-tag>
+        <text class="m-left-20">{{item.name}}</text>
+      </view>
+      <view class="product_name multi-omit" wx:elif="{{item.ifCoupon}}">
+        <van-tag type="warning">领券</van-tag>
+        <text class="m-left-20">{{item.name}}</text>
+      </view>
+      <view class="product_name multi-omit" wx:elif="{{item.ifReward}}">
+        <van-tag type="warning">满减</van-tag>
+        <text class="m-left-20">{{item.name}}</text>
+      </view>
+      <view class="product_name multi-omit" wx:else>
+        {{item.name}}
+      </view>
+
+      <view class='product_price space-between flex-r'>
+        <view class='flex-c'>
+          <view class='mid-align flex-r' wx:if="{{item.umpActivity && item.umpActivity.type == 'groupon'}}">
+            <text class="groupon-price">拼团价：</text>
+            <text class='info-price'><text style="font-size:30rpx">￥</text>{{item.umpActivity.price}}</text>
+          </view>
+          <view class='mid-align flex-r' wx:else>
+            <text class='info-price' wx:if="{{item.type != '展示商品'}}"><text style="font-size:30rpx">￥</text>{{item.finalPrice.price}}</text>
+            <text class='fz--invalid' wx:if="{{item.type != '展示商品'}}"> ¥{{item.finalPrice.linePrice}}</text>
+            <text class='fz--invalid' wx:if="{{item.type == '展示商品'}}" style="text-decoration:none;margin-bottom:10px">购买请咨询客服</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{url==false}}" class="product-list_item flex-c" style="width:calc(50%-10rpx)" wx:for="{{component.products}}" wx:key="index" data-adsvalue="{{item}}" bindtap="gotoProductDetail">
+      <image lazy-load="true" style="height:{{component.size==2?'230rpx':'340rpx'}}" src='{{item.img}}!big.jpg' mode='scaleToFill'></image>
+      <view class="product_name multi-omit" wx:if="{{item.grouponState == 1 && item.umpActivity.type == 'groupon'}}">
+        <van-tag type="warning">拼团</van-tag>
+        <text class="m-left-20">{{item.name}}</text>
+      </view>
+      <view class="product_name multi-omit" wx:elif="{{item.limitDiscountState == 1}}">
+        <van-tag type="warning">折扣</van-tag>
+        <text class="m-left-20">{{item.name}}</text>
+      </view>
+      <view class="product_name multi-omit" wx:elif="{{item.ifCoupon}}">
+        <van-tag type="warning">领券</van-tag>
+        <text class="m-left-20">{{item.name}}</text>
+      </view>
+      <view class="product_name multi-omit" wx:elif="{{item.ifReward}}">
+        <van-tag type="warning">满减</van-tag>
+        <text class="m-left-20">{{item.name}}</text>
+      </view>
+      <view class="product_name multi-omit" wx:else>
+        {{item.name}}
+      </view>
+
+      <view class='product_price space-between flex-r'>
+        <view class='flex-c'>
+          <view class='mid-align flex-r' wx:if="{{item.umpActivity && item.umpActivity.type == 'groupon'}}">
+            <text class="groupon-price">拼团价：</text>
+            <text class='info-price'><text style="font-size:30rpx">￥</text>{{item.umpActivity.price}}</text>
+          </view>
+          <view class='mid-align flex-r' wx:else>
+            <text class='info-price' wx:if="{{item.type != '展示商品'}}"><text style="font-size:30rpx">￥</text>{{item.finalPrice.price}}</text>
+            <text class='fz--invalid' wx:if="{{item.type != '展示商品'}}"> ¥{{item.finalPrice.linePrice}}</text>
+            <text class='fz--invalid' wx:if="{{item.type == '展示商品'}}" style="text-decoration:none;margin-bottom:10px">购买请咨询客服</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<view class="video-container">
+		<view wx:if="{{component.type === '视频'}}" class="nav-tw">
+			<video wx:if="{{component.sourceFrom == 1}}" class="avatar" src="{{component.video.url}}" controls autoplay loop></video>
+			<video wx:if="{{component.sourceFrom == 2}}" class="avatar" src="{{component.customUrl}}" controls autoplay loop></video>
+		</view>
+</view>

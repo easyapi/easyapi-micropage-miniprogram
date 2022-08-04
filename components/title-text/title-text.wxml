@@ -1,0 +1,5 @@
+<view class="title-container" style="padding: {{component.padding}};border-radius: {{component.borderRadius}};background-color: {{component.bgColor}};">
+  <view wx:if="{{component.type === '标题文本'}}" class="title">
+    <view class="title-title">{{ component.title }}</view>
+  </view>
+</view>

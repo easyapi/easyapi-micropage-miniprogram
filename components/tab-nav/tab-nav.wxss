@@ -1,0 +1,32 @@
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+image {
+  text-align: center;
+  width: 80%;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+}
+
+.button_img {
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+}
+
+.button_img::after {
+  border: none;
+}
+
+.text {
+  margin-top: 5px;
+}

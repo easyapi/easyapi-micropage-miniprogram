@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "加载中",
+  "usingComponents": {
+    "image-ad": "../../../components/image-ad/image-ad",
+    "tab-nav": "../../../components/tab-nav/tab-nav",
+    "video": "../../../components/video/video",
+    "product-list": "../../../components/product-list/product-list",
+    "cube": "../../../components/cube/cube",
+    "title-text": "../../../components/title-text/title-text",
+    "rich-text": "../../../components/rich-text/rich-text"
+  }
+}
