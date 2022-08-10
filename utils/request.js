@@ -1,4 +1,4 @@
-const easyApiMicroPageUrl = 'https://micro-page-api.easyapi.com';
+const easyApiMicroPageUrl = 'https://doc-api.easyapi.com';
 
 module.exports.easyApiMicroPageUrl = easyApiMicroPageUrl
 
